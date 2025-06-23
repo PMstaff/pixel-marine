@@ -1,0 +1,144 @@
+/* 基本樣式 */
+body {
+
+    background-image: url('background.jpeg');
+background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+
+}
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+header .logo {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+}
+
+header .banner img {
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.861);
+  font-size: 3em;
+}
+
+header .language-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none;
+  margin:40;
+  padding: 40;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 30;
+}
+
+nav ul li a {
+  display: block;
+  padding: 20px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* 內容區域 */
+main {
+  padding: 30px;
+}
+
+#content {
+  /* 根據需要添加內容樣式 */
+}
+
+#HOME {
+  padding: 20px;
+  background-color: #79afb1c1;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+#calendar {
+  padding: 20px;
+  background-color: #79afb1c1;
+  margin: 20px 20px;
+  color: #ffffff;
+}
+
+
+#price {
+  padding: 20px;
+  background-color: #79afb1aa;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+#about-us h2 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+#about-us p {
+  font-size: 16px;
+  color: #ffffff;
+}
+  @media (max-width: 10px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* 使容器高度為視窗高度 */
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* 確保在其他元素之上 */
+}
+
+.calendar-container iframe {
+  border: none;
+  width: 80%; /* 根據需要調整寬度 */
+  height: 80%; /* 根據需要調整高度 */
+}
+  }
